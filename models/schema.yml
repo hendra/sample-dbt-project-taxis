@@ -1,0 +1,24 @@
+
+version: 2
+
+models:
+  - name: average_trip_distance
+    description: "Average distance of each trip"
+    columns:
+      - name: average_trip_distance
+        description: "The average trip distance in the dataset"
+        tests:
+          - not_null
+
+  - name: payments_by_type
+    description: "Count of payments for each type"
+    columns:
+      - name: payment_type
+        description: "Payment type"
+        tests:
+          - unique
+          - not_null
+      - name: cnt
+        description: "Number of trips"
+        tests:
+          - not_null
