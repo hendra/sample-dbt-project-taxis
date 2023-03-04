@@ -1,3 +1,5 @@
 branch_to_target_mapping:
-    my_new_feature: my_new_feature
-    main: taxi_production
+    my_new_feature: taxi_dev
+    main: taxi_production 
+
+
