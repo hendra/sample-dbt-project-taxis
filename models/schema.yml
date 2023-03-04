@@ -24,3 +24,10 @@ models:
           - not_null
 
 
+  - name: ben_test
+    description: "BEN TEST Average distance of each trip"
+    columns:
+      - name: average_trip_distance
+        description: "The average trip distance in the dataset"
+        tests:
+          - not_null
