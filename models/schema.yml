@@ -32,8 +32,18 @@ models:
         tests:
           - not_null
 
-
-
+  - name: pickups_by_location_count
+    description: "Pickups By Location Count"
+    columns:
+      - name: pickup_ntaname
+        description: "The location"
+        tests:
+          - not_null
+      - name: cnt
+        description: "The number of pickups"
+        tests:
+          - not_null
+            
   - name: benj
     description: "benj BEN TEST Average distance of each trip"
     columns:
