@@ -23,7 +23,6 @@ models:
         tests:
           - not_null
 
-
   - name: sausage
     description: "sausage BEN TEST Average distance of each trip"
     columns:
