@@ -1,5 +1,15 @@
-branch_to_target_mapping:
-    my_new_feature: taxi_dev
-    main: taxi_production 
+title: Taxi Data Analytics
 
+description: This project analyses the New York taxi datasets
 
+owner: benjamin.wootton.personal@gmail.com
+
+main_branch: main
+
+# In this section we map your projects branches to DBT targets
+
+branch_deployments:
+    main : taxi_prod
+    test : taxi_test
+    dev  : taxi_dev
+    my_new_feature : taxi_dev
