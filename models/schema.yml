@@ -60,3 +60,10 @@ models:
           - not_null
             
 
+  - name: payments_by_type_large
+    description: "large payments by type"
+    columns:
+      - name: constant_currency 
+        description: "currency"
+        tests:
+          - not_null
