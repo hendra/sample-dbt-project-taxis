@@ -46,13 +46,6 @@ models:
         tests:
           - not_null
 
-  - name: sausage
-    description: "sausage BEN TEST Average distance of each trip"
-    columns:
-      - name: average_trip_distance
-        description: "The average trip distance in the dataset"
-        tests:
-          - not_null
 
   - name: pickups_by_location_count
     description: "Pickups By Location Count"
@@ -67,18 +60,3 @@ models:
           - not_null
             
 
-  - name: fish
-    description: "benj BEN TEST Average distance of each trip"
-    columns:
-      - name: average_trip_distance
-        description: "The average trip distance in the dataset"
-        tests:
-          - not_null
-            
-  - name: benj
-    description: "benj BEN TEST Average distance of each trip"
-    columns:
-      - name: average_trip_distance
-        description: "The average trip distance in the dataset"
-        tests:
-          - not_null
