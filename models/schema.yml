@@ -70,4 +70,4 @@ models:
       - name: payment_type
         description: "Type of payment e.g. Credit Card or Cash"
       - name: cnt
-        description: "Number of trips"
+        description: "Number of trips taken"
