@@ -64,6 +64,10 @@ models:
     description: "large payments by type"
     columns:
       - name: constant_currency 
-        description: "currency"
+        description: "Currency of the payment"
         tests:
           - not_null
+      - name: payment_type
+        description: "Type of payment e.g. Credit Card or Cash"
+      - name: cnt
+        description: "Number of trips"
