@@ -9,6 +9,6 @@ main_branch: main
 # In this section we map your projects branches to DBT targets asd
 
 branch_deployments:
-    main : taxi_dev
+    main : taxi_production
     test : taxi_test
     my_new_feature : taxi_dev
