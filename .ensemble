@@ -2,11 +2,9 @@ title: Taxi Data Analytics
 
 description: This project analyses the New York taxi datasets
 
-owner: benjamin.wootton.personal@gmail.com
+owner: hello@timeflow.systems
 
 main_branch: main
-
-# In this section we map your projects branches to DBT targets asd
 
 branch_deployments:
     main : taxi_production
