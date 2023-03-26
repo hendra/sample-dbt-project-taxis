@@ -5,14 +5,14 @@ sources:
   - name: NYC Taxi Data
     description: The source NYC Taxi Data
     tables:
-      - description: All of the trips taken in New York
       - name: trips
-    columns:
-      - name: id
-        description: ID of the trip
-        tests:
-          - unique
-          - not_null
+        description: All of the trips taken in New York
+        columns:
+        - name: id
+          description: ID of the trip
+          tests:
+            - unique
+            - not_null
 
   - name: stripe
     tables:
