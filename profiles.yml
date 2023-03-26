@@ -2,6 +2,12 @@ taxi_data_analytics:
 
   target: taxi_dev
   outputs:
+    default:
+      type: clickhouse
+      schema: default
+      host: 35.189.109.115
+      password: ''
+
     taxi_dev:
       type: clickhouse
       schema: taxi_dev

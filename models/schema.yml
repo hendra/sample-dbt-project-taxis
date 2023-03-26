@@ -2,7 +2,9 @@
 version: 2
 
 sources:
-  - name: NYC Taxi Data
+  - name: nyc_taxi_data
+    database: default 
+    schema: default
     description: The source NYC Taxi Data
     tables:
       - name: trips
