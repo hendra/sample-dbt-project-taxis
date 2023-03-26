@@ -11,3 +11,4 @@ branch_deployments:
     test : taxi_test
     my_new_feature : taxi_dev
     fix_failing_test : taxi_dev
+    fix_bugs : taxi_dev

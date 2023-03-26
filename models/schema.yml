@@ -10,7 +10,7 @@ sources:
       - name: trips
         description: All of the trips taken in New York
         columns:
-        - name: id
+        - name: trip_id
           description: ID of the trip
           tests:
             - unique
