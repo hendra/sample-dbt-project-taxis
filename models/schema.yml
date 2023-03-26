@@ -2,27 +2,34 @@
 version: 2
 
 sources:
-  - name: jaffle_shop
+  - name: NYC Taxi Data
+    description: The source NYC Taxi Data
     tables:
-      - name: orders
-      - name: customers
+      - description: All of the trips taken in New York
+      - name: trips
+    columns:
+      - name: id
+        description: ID of the trip
+        tests:
+          - unique
+          - not_null
 
   - name: stripe
     tables:
-      - name: payments
+      - name: taxi_payments
 
 exposures:
 
-  - name: weekly_jaffle_metrics
-    label: Jaffles by the Week
+  - name: Taxi Payment Management Dashboard 
+    label: Dashboard for executives
     type: dashboard
     maturity: high
     owner:
-      name: Callum McData
-      email: data@jaffleshop.com
-    url: https://bi.tool/dashboards/1
+      name: Mr Taxi Boss
+      email: taxi.boss@taxis.com
+    url: https://bi.tool/dashboards
     description: >
-      Did someone say "exponential growth"?
+      This taxi is really intersting
 
 models:
   - name: average_trip_distance
