@@ -20,8 +20,20 @@ sources:
     tables:
       - name: taxi_payments
 
-exposures:
+seeds:
+  - name: payment_types
+    description: "Mapping of payment code types to descriptions"
+    columns:
+     - name: "Code"
+       description: "Payment Code"
+     - name: "Description"
+       description: "Description Of The Payment Type"
 
+tests:
+  - name: less_than_1000_observations 
+    description: "Checking that we have at least 1000 observations"
+
+exposures:
   - name: Taxi Payment Management Dashboard 
     label: Dashboard for executives
     type: dashboard
