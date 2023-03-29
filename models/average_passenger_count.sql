@@ -1,4 +1,3 @@
-
 /*
     Welcome to your first dbt model!
     Did you know that you can also configure models directly within SQL files?
@@ -11,7 +10,8 @@
 
 with source_data as (
 
-    select avg( passenger_count ) as passenger_count from default.trips
+    select avg(passenger_count) as passenger_count
+    from {{ source('nyc_taxi_data', 'trips' ) }}
 
 )
 
