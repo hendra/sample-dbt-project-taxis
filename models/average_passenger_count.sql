@@ -11,7 +11,7 @@
 
 with source_data as (
 
-    select avg( passenger_count ) as passenger_count from {{ source('default', 'trips' ) }}
+    select avg( passenger_count ) as passenger_count from {{ source('nyc_taxi_data', 'trips' ) }}
 
 )
 
