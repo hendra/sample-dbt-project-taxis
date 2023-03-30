@@ -34,7 +34,7 @@ tests:
     description: "Checking that we have at least 1000 observations"
 
 exposures:
-  - name: weekly_jaffle_metrics_xxx
+  - name: Title With Spaces
     label: Dashboard for executives
     type: dashboard
     maturity: high
